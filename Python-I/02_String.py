@@ -41,3 +41,10 @@ print('원래 단어 : ' + tot_words)
  토큰 : ['책상', ' 의자', ' 서적', ' 대한민국', ' 수도', ' 서울']
  문장 : 책상  의자  서적  대한민국  수도  서울 
 '''
+origin_str = '책상, 의자, 서적, 대한민국, 수도, 서울'
+
+words = origin_str.split(sep = ',' )
+print('토큰 : ', words)
+
+sentence = ' '.join(words)
+print('문장 : ', sentence)

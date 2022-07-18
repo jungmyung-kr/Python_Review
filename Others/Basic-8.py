@@ -7,7 +7,8 @@ https://www.youtube.com/watch?v=kWiCuklohdY&t=3s
 2022-07-15 02:58:59 ~ 03:10:11
 2022-07-16 03:10:12 ~ 03:17:44
 2022-07-17 03:17:45 ~ 03:26:26
-2022-07:18 03:26:27 ~
+2022-07-18 03:26:27 ~ 03:30:21
+2022-07-19 03:30:22 ~
 """
 
 # 8-1 표준입출력
@@ -134,5 +135,21 @@ for line in lines:
 score_file.close()
 
 # 8-4 pickle
+
+import pickle
+
+# 파일 쓰기
+profile_file = open("profile.pickle", "wb")
+profile = {"이름": "박명수", "나이": 30, "취미": ["축구", "요리", "코딩"]}
+print(profile)
+pickle.dump(profile, profile_file)  # profile의 내용을 profile_file에 저장
+profile_file.close()
+
+# 파일 읽어오기
+profile_file = open("profile.pickle", "rb")
+profile = pickle.load(profile_file)  # profile_file에 있는 정보를 불러와 profile에 저장
+print(profile)
+profile_file.close()
+
 # 8-5 with
 # 8-6 퀴즈 #7

@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=kWiCuklohdY&t=3s
 2022-07-16 03:10:12 ~ 03:17:44
 2022-07-17 03:17:45 ~ 03:26:26
 2022-07-18 03:26:27 ~ 03:30:21
-2022-07-19 03:30:22 ~
+2022-07-19 03:30:22 ~ 03:39:07
 """
 
 # 8-1 표준입출력
@@ -152,4 +152,38 @@ print(profile)
 profile_file.close()
 
 # 8-5 with
+# file close()하지 않아도 됨.
+
+import pickle
+
+with open("profile.pickle", "rb") as profile_file:
+    print(pickle.load(profile_file))
+
+with open("study.txt", "w", encoding="utf8") as study_file:
+    study_file.write("파이썬을 열심히 공부하고 있어요.")
+
+with open("study.txt", "r", encoding="utf8") as study_file:
+    print(study_file.read())
+
+
 # 8-6 퀴즈 #7
+
+'''
+Quiz) 당신의 회사에서는 매주 1회 작성해야 하는 보고서가 있습니다.
+보고서는 항상 아래와 같은 형태로 출력되어야 합니다.
+
+- X주차 주간 보고 -
+부서 :
+이름 :
+업무 요약 :
+
+1주차부터 50주차까지의 보고서 파일을 만드는 프로그램을 작성하시오.
+
+조건 : 파일명은 '1주차.txt', '2주차.txt',...와 같이 만듭니다.
+'''
+for num in range(1, 51):
+    with open(str(num) + "주차.txt", "w", encoding="utf8") as report_file:
+        report_file.write("- {0}주차 주간 보고 -".format(num))
+        report_file.write("\n부서 :")
+        report_file.write("\n이름 :")
+        report_file.write("\n업무 요약 :")

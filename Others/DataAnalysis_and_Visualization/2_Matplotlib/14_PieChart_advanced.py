@@ -13,7 +13,7 @@ import matplotlib
 matplotlib.rcParams['font.family'] = 'AppleGothic'
 matplotlib.rcParams['font.size'] = 15
 matplotlib.rcParams['axes.unicode_minus'] = False
-
+import pandas as pd
 '''
 14. 원 그래프 (심화)
 '''
@@ -60,3 +60,23 @@ plt.pie(values, labels=labels, autopct=custom_autopct,\
         explode=explode, wedgeprops=wedgeprops, pctdistance=0.7)
 plt.show()
 # pctdistance = 글씨 중심에서 이동
+
+
+'''
+DataFrame 활용
+'''
+df = pd.read_excel('score.xlsx')
+df
+
+grp = df.groupby('학교')
+grp
+
+grp.size()['북산고']  # 5
+grp.size()['능남고']  # 3
+
+values = [grp.size()['북산고'], grp.size()['능남고']]  # [5, 3]
+labels = ['북산고', '능남고']
+
+plt.pie(values, labels=labels)
+plt.title('소속 학교')
+plt.show()

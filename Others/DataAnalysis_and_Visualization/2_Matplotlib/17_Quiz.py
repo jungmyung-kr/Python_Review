@@ -80,6 +80,9 @@ plt.plot(df_group['평점'])
 - x축 눈금 : 5년 단위 (2005, 2010, 2015, 2020)
 - y축 눈금 : 최소 7, 최대 10
 '''
+plt.plot(df_group['평점'], marker='o')
+plt.xticks([2005, 2010, 2015, 2020])
+plt.ylim(7, 10)
 
 #######################################################
 '''
@@ -89,3 +92,10 @@ plt.plot(df_group['평점'])
 - 퍼센트 : 소수점 첫째 자리까지 표시
 - 범례 : 그래프 우측에 표시
 '''
+
+filt = df['평점'] >= 9.0
+values = [len(df[filt]), len(df[~filt])]
+labels = ['9점 이상', '9점 미만']
+
+plt.pie(values, labels=labels, autopct='%.1f%%')
+plt.legend(loc=(1, 0.3))

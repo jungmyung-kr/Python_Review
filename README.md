@@ -22,3 +22,4 @@ Python 주제별 문제 풀이를 통한 복습
   * Pandas
   * Matplotlib
   * Project
+    * Population Pyramid

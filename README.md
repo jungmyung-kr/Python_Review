@@ -10,7 +10,7 @@ Python 주제별 문제 풀이를 통한 복습
   * regEx : 정규 표현식 
   * Function : 함수 
   * Class : 클래스 
-  * FileOI : 예외 처리와 파일 입출력
+  * FileOI : 예외 처리와 파일 입출력 
   * MariaDB : Python DB 연동
   * HTML Crawling : 웹 
 

@@ -20,6 +20,6 @@ Python 주제별 문제 풀이를 통한 복습
 * Basic
 * Data Analysis and Visualization
   * Pandas
-  * Matplotlib
+  * Matplotlib 
   * Project 
     * Population Pyramid

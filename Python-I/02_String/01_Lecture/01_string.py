@@ -47,7 +47,7 @@ Python의 index : 0부터 -> 변수[0]
 # 1) indexing : 특정 문자 참조
 # 왼쪽 기준 색인 
 print(lineStr) # this is one line string
-print('왼쪽의 첫번째 문자 : ', lineStr[0]) # t
+print('왼쪽의 첫번째 문자 : ', lineStr[0]) # 왼쪽의 첫번째 문자 :  t
 print(lineStr[0:4]) # 0부터 4의 이전까지인 3까지 가져옴 : this
 print(lineStr[:4]) # 위랑 같은 결과, 시작점이 첫글자면 생략 가능: this
 
@@ -60,16 +60,18 @@ print(lineStr[-6:-1]) # strin : -6부터 -1전인 -2까지
 subStr = lineStr[:4]
 print(subStr) # this
 
-print(id(lineStr)) # 2063029382880
-print(id(subStr)) # 2063057380208
+print(id(lineStr)) # 4491158480
+print(id(subStr)) # 4492884976
 # subStr이 lineStr에서 추출한 거지만 아예 다른 위치에 저장되어 있음을 확인 가능
 
 # 3. 문자열 연산 
+print('python' + ' program') 
+# python program
+# 결합연산자 
 
-
-print('python' + ' program') # 결합연산자 
-
-print('-'*50) # 반복연산자 
+print('-'*50) 
+# --------------------------------------------------
+# 반복연산자 
 
 
 # 4. 문자열 처리 함수 
@@ -112,12 +114,21 @@ index() : 색인 반환, 문자 없는 경우(error)
 print(testStr.count('n')) # 2
 
 # 3) 문자 유형 구분 
-testStr.isalpha() # 순수하게 알파벳으로 구성되었는지? : False (공백, 숫자, 특문 포함한다)  
-testStr.isascii() # 아스키 코드로만 구성되었는가 : True (영문자, 공백, 숫자, 특문) 
-# False: ex) 한글 포함 
+testStr.isalpha() 
+# 순수하게 알파벳으로 구성되었는지? 
+# : False (공백, 숫자, 특문 포함한다)  
+
+testStr.isascii() 
+# 아스키 코드로만 구성되었는지?
 # 아스키 코드 : 영어로만 된 키보드 생각해보길 / 한글은 유니코드 
-testStr.islower() # 순수하게 소문자로만 구성되었는지? : False
-"1234".isnumeric() # 모든 구성요소가 숫자인가? : True
+# : True (영문자, 공백, 숫자, 특문) 
+# False: ex) 한글 포함 
+
+testStr.islower() 
+# 순수하게 소문자로만 구성되었는지? : False
+
+"1234".isnumeric() 
+# 모든 구성요소가 숫자인가? : True
 
 # 4) 대소문 처리 
 testStr.upper() # ' MY NAME IS HONG!! '
@@ -130,6 +141,7 @@ testStr.startswith('My') # False : 공백도 문자에 포함됨
 testStr.strip() 
 # 문장의 앞뒷 공백 제거, 그러나 testStr 객체의 내용이 수정되는 건 아님.
 # 만약에 공백 제거 하고 저장하고 싶다면 새로운 변수명 앞에 달아줘야
+
 newTestStr=testStr.strip() # 'My name is hong!!'
 
 newTestStr.startswith('My') # True
@@ -139,11 +151,12 @@ newTestStr.startswith('My') # True
 testStr = testStr.replace('!', '')
 testStr # ! 제거 : ' My name is hong '
 len(testStr) # 17
+# ! 제거하면서 전체 글자 수 19 -> 17로 줄어듬.
 
 testStr = testStr.replace(' ','')
 testStr # 공백 제거: 'Mynameishong'
-len(testStr) # 12
-testStr.isalpha() # True
+len(testStr) # 17 -> 12
+testStr.isalpha() # True (공백도 사라졌으므로 순수한 알파벳으로만 구성)
 
 
 # 5. 문자열 분리(split) & 결합(join)
@@ -175,7 +188,7 @@ len(sents) # 3
 help(len) # Help on built-in function len in module builtins:
 
 # 메서드 
-#help(split) # NameError: name 'split' is not defined
+# help(split) # NameError: name 'split' is not defined
 help(multiLine.split) # Help on built-in function split:
     # 단독함수가 아니고 객체에 의해 호출되므로 
     # 도움말을 볼 때도 아무 객체 먼저 써주고 그 후에 메서드 이름 써서 확인
@@ -186,7 +199,8 @@ words # ['This', 'is', 'multi', 'line', 'string']
 len(words) # 5
 
 # 최대 split 개수 지정 
-multiLine.split(maxsplit=1)  ['This', 'is multi line\nstring']
+multiLine.split(maxsplit=1)  
+#['This', 'is multi line\nstring']
 # 생략된것: 구분자 sep = ' ' (디폴트)
 # 즉 첫번째 ' '(공백)에서 스플릿 한번 
 

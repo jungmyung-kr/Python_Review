@@ -24,6 +24,9 @@ Python 주제별 문제 풀이를 통한 복습
     * dict
     
   * regEx : 정규 표현식
+    * regEx
+    * text preprocessing
+  
   * Function : 함수
   * Class : 클래스
   * FileOI : 예외 처리와 파일 입출력

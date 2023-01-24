@@ -24,7 +24,9 @@ texts[-1].lower() #'uysfsfa,  a124&***$?'
 texts_re = [ st.lower() for st in texts]
 print(texts_re)
 # ['afab54747,asabag?', 'abtta $$;a12:2424.', 'uysfsfa,  a124&***$?']
+
 '''
+같은 결과 다른 방법
 texts_re = []
 for st in texts :
     texts_re.append(st.lower())
@@ -36,15 +38,16 @@ texts_re2 = [re.sub('[0-9]', '', st) for st in texts_re]
 print(texts_re2)
 # ['afab,asabag?', 'abtta $$;a:.', 'uysfsfa,  a&***$?']
 
-
 # 단계3 : 문장부호 제거 
 punc_str = '[,.?!:;]' # 이렇게 변수에 다 넣어도 되고,  sub문에 직접 다 써줘도 됨.
+
 texts_re3 = [re.sub(punc_str, '', st) for st in texts_re2]
 print(texts_re3)
 # ['afabasabag', 'abtta $$a', 'uysfsfa  a&***$']
 
 # 단계4 : 특수문자 제거 
 spec_str = '[@#$%^&*()]'
+
 texts_re4 = [re.sub(spec_str, '', st) for st in texts_re3]
 print(texts_re4)
 # ['afabasabag', 'abtta a', 'uysfsfa  a']

@@ -218,7 +218,6 @@ text = sub('[\^*$]', '', st3) # '[\^\*\$]'
 
 print(text) # test홍길동 abc 대한민국 123tbc
 
-
 # sub vs findall
 sub('[\^*$\s]','',st3) # 교체(제거)
 #'test홍길동abc대한민국123tbc'
@@ -261,11 +260,11 @@ print(urls) # ['http://news.com/test', 'new.com', 'http://news.com/test2', 'http
 
 # 올바른 urls 추출 
 url_pat = re.compile('http://news')
-dir(url_pat) # 사용할 수 있는 메서드? 조회
+dir(url_pat) # 사용할 수 있는 메서드 조회
 # findall
 
 # findall() : 일치된 내용 반환
-url_pat.findall(urls[0]) # ['http://news'] -< True
+url_pat.findall(urls[0]) # ['http://news'] -> True
 url_pat.findall(urls[1]) # [] -> False
 
 

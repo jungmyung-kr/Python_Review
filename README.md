@@ -14,7 +14,7 @@ Python 주제별 문제 풀이를 통한 복습
     
   * Control : 조건문, 반복문 
     * if
-    * while
+    * while 
     * for
     
   * Data Structure : 자료 구조 

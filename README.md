@@ -24,7 +24,7 @@ Python 주제별 문제 풀이를 통한 복습
     * dict
     
   * regEx : 정규 표현식 
-    * regEx
+    * regEx 
     * text preprocessing 
   
   * Function : 함수

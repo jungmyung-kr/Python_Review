@@ -8,7 +8,7 @@ Python 주제별 문제 풀이를 통한 복습
     * operator 
     * print, input
     
-  * String : 문자열 
+  * String : 문자열
     * string 
     * escape
     

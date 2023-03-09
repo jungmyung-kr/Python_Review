@@ -33,7 +33,7 @@ Python 주제별 문제 풀이를 통한 복습
     * function of apply
     * function argument 
     
-  * Class : 클래스
+  * Class : 클래스 
   * FileOI : 예외 처리와 파일 입출력 
   * MariaDB : Python DB 연동
   * HTML Crawling : 웹

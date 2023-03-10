@@ -19,7 +19,7 @@ Python 주제별 문제 풀이를 통한 복습
     
   * Data Structure : 자료 구조 
     * list
-    * tuple
+    * tuple 
     * set 
     * dict
     

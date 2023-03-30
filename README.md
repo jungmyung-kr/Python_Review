@@ -4,7 +4,7 @@ Python 주제별 문제 풀이를 통한 복습
 
 * 목차
   * Basic : 기초 
-    * variable 
+    * variable
     * operator 
     * print, input 
     

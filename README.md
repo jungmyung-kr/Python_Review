@@ -18,7 +18,7 @@ Python 주제별 문제 풀이를 통한 복습
     * for
     
   * Data Structure : 자료 구조
-    * list
+    * list 
     * tuple 
     * set
     * dict

@@ -9,7 +9,7 @@ Python 주제별 문제 풀이를 통한 복습
     * print, input 
     
   * String : 문자열
-    * string
+    * string 
     * escape
     
   * Control : 조건문, 반복문

@@ -1,6 +1,7 @@
 Python 주제별 문제 풀이를 통한 복습
  
 ## Python-I 
+[Go to forder](https://github.com/jungmyung-kr/Python_Review/tree/main/Python-I)
 
 * 목차  
   * Basic : 기초 
@@ -9,11 +10,6 @@ Python 주제별 문제 풀이를 통한 복습
   * Data Structure : 자료 구조
   * regEx : 정규 표현식
   * Function : 함수
-    * user function
-    * mudule function
-    * function of apply
-    * function argument 
-    
   * Class : 클래스 
   * FileOI : 예외 처리와 파일 입출력 
   * MariaDB : Python DB 연동
@@ -36,8 +32,9 @@ Python and Python related practice based on Do it series
 
 ## Others
 
-[Python practice based on youtube videos](https://youtube.com/@nadocoding)
+[Python practice based on youtube videos](https://youtube.com/@nadocoding)  
 
+[Go to folder](https://github.com/jungmyung-kr/Python_Review/tree/main/Others)
 * 목차 
   * Basic
   * Data Analysis and Visualization

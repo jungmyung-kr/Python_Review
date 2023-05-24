@@ -24,7 +24,7 @@ Python 주제별 문제 풀이를 통한 복습
 Python and Python related practice based on Do it series
 
 * Python 
-> Do it! Jump to Python 
+> Do it! Jump to Python
 
 * Pandas
 > Do it! Introduction to Pandas for Data analysis (데이터 분석을 위한 판다스 입문)

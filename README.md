@@ -8,7 +8,7 @@ Python 주제별 문제 풀이를 통한 복습
   * String : 문자열
   * Control : 조건문, 반복문
   * Data Structure : 자료 구조 
-  * regEx : 정규 표현식 
+  * regEx : 정규 표현식
   * Function : 함수
   * Class : 클래스 
   * FileOI : 예외 처리와 파일 입출력 

@@ -4,7 +4,7 @@ Python 주제별 문제 풀이를 통한 복습
 [Go to forder](https://github.com/jungmyung-kr/Python_Review/tree/main/Python-I)
 
 * 목차
-  * Basic : 기초
+  * Basic : 기초m
   * String : 문자열
   * Control : 조건문, 반복문
   * Data Structure : 자료 구조

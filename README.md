@@ -23,7 +23,7 @@ Python 주제별 문제 풀이를 통한 복습
 
 Python and Python related practice based on Do it series
 
-* Python 
+* Python
 > Do it! Jump to Python
 
 * Pandas

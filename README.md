@@ -35,7 +35,7 @@ Python and Python related practice based on Do it series
 [Python practice based on youtube videos](https://youtube.com/@nadocoding)  
 
 [Go to folder](https://github.com/jungmyung-kr/Python_Review/tree/main/Others)
-* 목차 
+* 목차
   * Basic
   * Data Analysis and Visualization
     * Pandas
